@@ -1,4 +1,4 @@
-module unzipR
+module github.com/kawakatz/unzipR
 
 go 1.17
 
