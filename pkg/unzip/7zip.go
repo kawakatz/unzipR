@@ -12,6 +12,7 @@ import (
 	"github.com/saracen/go7z"
 )
 
+// Sevenzip decompress .7z.
 func Sevenzip(path string) {
 	out := utils.OutDir(path)
 	fmt.Println(path + " -> " + strings.Replace(out, " ", "\\ ", -1) + "/*")

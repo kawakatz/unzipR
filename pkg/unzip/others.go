@@ -10,6 +10,7 @@ import (
 	"github.com/mholt/archiver"
 )
 
+// TarLz4 decompress .tar.lz4.
 func TarLz4(path string) {
 	out := utils.OutDir(path)
 	fmt.Println(path + " -> " + strings.Replace(out, " ", "\\ ", -1) + "/*")
@@ -18,6 +19,7 @@ func TarLz4(path string) {
 	archive.Unarchive(path, out)
 }
 
+// TarSz decompress .tar.sz.
 func TarSz(path string) {
 	out := utils.OutDir(path)
 	fmt.Println(path + " -> " + strings.Replace(out, " ", "\\ ", -1) + "/*")
@@ -26,6 +28,7 @@ func TarSz(path string) {
 	archive.Unarchive(path, out)
 }
 
+// TarXz decompress .tar.xz.
 func TarXz(path string) {
 	out := utils.OutDir(path)
 	fmt.Println(path + " -> " + strings.Replace(out, " ", "\\ ", -1) + "/*")
@@ -34,6 +37,7 @@ func TarXz(path string) {
 	archive.Unarchive(path, out)
 }
 
+// Lz4 decompress .lz4.
 func Lz4(path string) {
 	out := utils.OutPath(path)
 	fmt.Println(path + " -> " + strings.Replace(out, " ", "\\ ", -1))
@@ -51,6 +55,7 @@ func Lz4(path string) {
 	archive.Decompress(src, dist)
 }
 
+// Xz decompress .xz.
 func Xz(path string) {
 	out := utils.OutPath(path)
 	fmt.Println(path + " -> " + strings.Replace(out, " ", "\\ ", -1))

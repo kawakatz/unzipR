@@ -10,6 +10,7 @@ import (
 	"github.com/mholt/archiver"
 )
 
+// Gunzip decompress .gz.
 func Gunzip(path string) {
 	out := utils.OutPath(path)
 	fmt.Println(path + " -> " + strings.Replace(out, " ", "\\ ", -1))
@@ -27,6 +28,7 @@ func Gunzip(path string) {
 	archive.Decompress(src, dist)
 }
 
+// TarGzip decompress .tar.gz.
 func TarGzip(path string) {
 	out := utils.OutDir(path)
 	fmt.Println(path + " -> " + strings.Replace(out, " ", "\\ ", -1) + "/*")

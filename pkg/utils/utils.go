@@ -10,30 +10,14 @@ import (
 	"strings"
 
 	"github.com/djherbis/times"
-	"github.com/fatih/color"
 )
 
+// Usage prints usage.
 func Usage() {
 	fmt.Println("usage: unzipR <path>")
 }
 
-func GrepSlice(s []string, key string) bool {
-	for _, v := range s {
-		if strings.Contains(strings.ToLower(v), strings.ToLower(key)) {
-			return true
-		}
-	}
-
-	return false
-}
-
-func GrepColor(str string, key string) string {
-	index := strings.Index(strings.ToLower(str), strings.ToLower(key))
-	colored := str[:index] + color.GreenString(str[index:index+len(key)]) + str[index+len(key):]
-
-	return colored
-}
-
+// LsR recursively lists the directory.
 func LsR(dir string) []string {
 	files, _ := ioutil.ReadDir(dir)
 
@@ -49,11 +33,13 @@ func LsR(dir string) []string {
 	return paths
 }
 
+// IsDir checks if the path is a directory.
 func IsDir(path string) bool {
 	fi, _ := os.Stat(path)
 	return fi.IsDir()
 }
 
+// OutDir decides the output directory.
 func OutDir(path string) string {
 	out := strings.TrimSuffix(path, filepath.Ext(path))
 	if _, err := os.Stat(out); errors.Is(err, os.ErrNotExist) {
@@ -81,6 +67,7 @@ func OutDir(path string) string {
 	}
 }
 
+// OutPath decides the output path.
 func OutPath(path string) string {
 	var out string
 	if strings.HasSuffix(path, ".gz") {
@@ -110,6 +97,7 @@ func OutPath(path string) string {
 	}
 }
 
+// IsExist checks if the path exists.
 func IsExist(path string) bool {
 	if _, err := os.Stat(path); errors.Is(err, os.ErrNotExist) {
 		return false

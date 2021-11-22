@@ -9,6 +9,7 @@ import (
 	"github.com/h2non/filetype"
 )
 
+// Do decompress the file.
 func Do(path string) {
 	buf, _ := ioutil.ReadFile(path)
 	kind, _ := filetype.Match(buf)

@@ -8,6 +8,7 @@ import (
 	"github.com/mholt/archiver"
 )
 
+// Unrar decompress .rar.
 func Unrar(path string) {
 	out := utils.OutDir(path)
 	fmt.Println(path + " -> " + strings.Replace(out, " ", "\\ ", -1) + "/*")

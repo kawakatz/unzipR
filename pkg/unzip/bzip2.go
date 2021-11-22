@@ -10,6 +10,7 @@ import (
 	"github.com/mholt/archiver"
 )
 
+// Bzip2 decompress .bz2.
 func Bzip2(path string) {
 	out := utils.OutPath(path)
 	fmt.Println(path + " -> " + strings.Replace(out, " ", "\\ ", -1))
@@ -27,6 +28,7 @@ func Bzip2(path string) {
 	archive.Decompress(src, dist)
 }
 
+// TarBz2 decompress .tar.bz2.
 func TarBz2(path string) {
 	out := utils.OutDir(path)
 	fmt.Println(path + " -> " + strings.Replace(out, " ", "\\ ", -1) + "/*")

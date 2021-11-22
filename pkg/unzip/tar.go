@@ -8,6 +8,7 @@ import (
 	"github.com/mholt/archiver"
 )
 
+// Tar decompress .tar.
 func Tar(path string) {
 	out := utils.OutDir(path)
 	fmt.Println(path + " -> " + strings.Replace(out, " ", "\\ ", -1) + "/*")

@@ -9,6 +9,7 @@ import (
 	"github.com/mholt/archiver"
 )
 
+// Unzip decompress .zip.
 func Unzip(path string) {
 	out := utils.OutDir(path)
 	fmt.Println(path + " -> " + strings.Replace(out, " ", "\\ ", -1) + "/*")
