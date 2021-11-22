@@ -5,7 +5,8 @@ import (
 	"os"
 	gopath "path"
 	"strings"
-	"unzipR/pkg/utils"
+
+	"github.com/kawakatz/unzipR/pkg/utils"
 
 	"github.com/mholt/archiver"
 )

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"unzipR/pkg/utils"
+	"github.com/kawakatz/unzipR/pkg/utils"
 
 	"github.com/mholt/archiver"
 )

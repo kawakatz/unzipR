@@ -4,8 +4,9 @@ import (
 	"flag"
 	"os"
 	"sync"
-	"unzipR/pkg/decompress"
-	"unzipR/pkg/utils"
+
+	"github.com/kawakatz/unzipR/pkg/decompress"
+	"github.com/kawakatz/unzipR/pkg/utils"
 )
 
 func main() {

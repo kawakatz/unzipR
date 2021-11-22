@@ -7,7 +7,8 @@ import (
 	gopath "path"
 	"path/filepath"
 	"strings"
-	"unzipR/pkg/utils"
+
+	"github.com/kawakatz/unzipR/pkg/utils"
 
 	"github.com/saracen/go7z"
 )

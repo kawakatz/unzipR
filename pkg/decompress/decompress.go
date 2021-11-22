@@ -4,7 +4,7 @@ import (
 	"io/ioutil"
 	"strings"
 
-	"unzipR/pkg/unzip"
+	"github.com/kawakatz/unzipR/pkg/unzip"
 
 	"github.com/h2non/filetype"
 )
