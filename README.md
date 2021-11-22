@@ -40,7 +40,7 @@ unzipR can decompress files in the following compressed formats:
 `<path>` can be a path of a file or directory.<br>
 If a directory path is specified, unzipR will **recursively** decompress all the files in the directory.<br>
 
-## Todo
+## 📋 Todo
 - Support for password-protected zip
 - Decompressing a file after it has been unzipped if it contains a compressed file.
 
