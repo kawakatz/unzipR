@@ -42,7 +42,7 @@ If a directory path is specified, unzipR will **recursively** decompress all the
 
 ## 📋 Todo
 - Support for password-protected zip
-- Decompressing a file after it has been unzipped if it contains a compressed file.
+- Re-decompress the decompressed files if it contains compressed files.
 
 ## Acknowledgement
 This README.md format is inspired by  [@projectdiscovery](https://github.com/projectdiscovery/)🙇‍♂️
