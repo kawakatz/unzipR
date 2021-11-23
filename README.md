@@ -4,6 +4,8 @@
 <a href="https://github.com/kawakatz/unzipR/issues"><img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat"></a>
 <a href="https://goreportcard.com/badge/github.com/kawakatz/unzipR"><img src="https://goreportcard.com/badge/github.com/kawakatz/unzipR"></a>
 <a href="https://www.codefactor.io/repository/github/kawakatz/unzipR/badge"><img src="https://www.codefactor.io/repository/github/kawakatz/unzipR/badge"></a>
+<a href="https://github.com/kawakatz/unzipR/releases"><img src="https://img.shields.io/github/v/release/kawakatz/unzipR"></a>
+<a href="https://github.com/kawakatz/unzipR/blob/master/go.mod"><img src="https://img.shields.io/github/go-mod/go-version/kawakatz/unzipR"></a>
 <a href="https://twitter.com/kawakatz"><img src="https://img.shields.io/twitter/follow/kawakatz.svg?logo=twitter"></a>
 </p>
 
