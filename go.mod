@@ -1,6 +1,6 @@
 module github.com/kawakatz/unzipR
 
-go 1.17
+go 1.15
 
 require (
 	github.com/dsnet/compress v0.0.1 // indirect
