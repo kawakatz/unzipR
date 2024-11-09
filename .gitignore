@@ -29,3 +29,5 @@ Temporary Items
 # kawakatz
 bin/
 dist/
+bin/*
+dist/*

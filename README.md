@@ -3,7 +3,6 @@
 <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/license-MIT-_red.svg"></a>
 <a href="https://github.com/kawakatz/unzipR/issues"><img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat"></a>
 <a href="https://goreportcard.com/badge/github.com/kawakatz/unzipR"><img src="https://goreportcard.com/badge/github.com/kawakatz/unzipR"></a>
-<a href="https://github.com/kawakatz/unzipR/actions/workflows/release.yml"><img src="https://github.com/kawakatz/unzipR/actions/workflows/release.yml/badge.svg"></a>
 <a href="https://github.com/kawakatz/unzipR/releases"><img src="https://img.shields.io/github/v/release/kawakatz/unzipR"></a>
 <a href="https://github.com/kawakatz/unzipR/blob/master/go.mod"><img src="https://img.shields.io/github/go-mod/go-version/kawakatz/unzipR"></a>
 <a href="https://twitter.com/kawakatz"><img src="https://img.shields.io/twitter/follow/kawakatz.svg?logo=twitter"></a>
@@ -12,7 +11,7 @@
 <p align="center">
   <a href="#installation">Installation</a> •
   <a href="#usage">Usage</a>  •
-  <a href="#-todo">Todo</a>  •
+  <a href="#-todo">Todo</a>
 </p>
 
 unzipR decompress all the compressed files in the directory.
@@ -27,13 +26,13 @@ unzipR can decompress files in the following compressed formats:
 - lzip4 (including .tar.lz4)
 - xz (including .tar.xz)
 
-## Installation
+# Installation
 ```sh
 # install unzipR
 ➜  ~ go install -v github.com/kawakatz/unzipR/cmd/unzipR@latest
 ```
 
-## Usage
+# Usage
 ```sh
 ➜  ~ unzipR <path>
 ```
@@ -41,6 +40,6 @@ unzipR can decompress files in the following compressed formats:
 `<path>` can be a path of a file or directory.<br>
 If a directory path is specified, unzipR will **recursively** decompress all the files in the directory.<br>
 
-## 📋 Todo
+# 📋 Todo
 - Support for password-protected zip
 - Re-decompress the decompressed files if it contains compressed files.
