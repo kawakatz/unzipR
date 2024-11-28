@@ -5,7 +5,7 @@
 <a href="https://goreportcard.com/badge/github.com/kawakatz/unzipR"><img src="https://goreportcard.com/badge/github.com/kawakatz/unzipR"></a>
 <a href="https://github.com/kawakatz/unzipR/releases"><img src="https://img.shields.io/github/v/release/kawakatz/unzipR"></a>
 <a href="https://github.com/kawakatz/unzipR/blob/master/go.mod"><img src="https://img.shields.io/github/go-mod/go-version/kawakatz/unzipR"></a>
-<a href="https://twitter.com/kawakatz"><img src="https://img.shields.io/twitter/follow/kawakatz.svg?logo=twitter"></a>
+<a href="https://x.com/kawakatz"><img src="https://img.shields.io/twitter/follow/kawakatz"></a>
 </p>
 
 <p align="center">
